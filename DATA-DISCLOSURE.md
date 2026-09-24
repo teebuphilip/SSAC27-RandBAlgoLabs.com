@@ -13,3 +13,7 @@ The aggregate result tables here are sufficient to inspect the submission
 claim, and `scripts/bootstrap_sloan_results.py` runs against the bundled
 sanitized aggregate artifacts. The full internal comparison runner requires
 additional authorized source artifacts that are not redistributed here.
+
+The public aggregate data schema is documented in
+`results/SCHEMA.md`. The headline bootstrap can be regenerated from the
+bundled `team_operations_scores.csv` and `team_season_outcomes.csv` files.

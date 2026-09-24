@@ -13,7 +13,7 @@ Research Paper Competition.
 
 ## Paper
 
-**Stochastic Roster Shape, Archetype Mix, and Championship Likeness in NBA Team Evaluation**
+**Roster Shape, Archetype Structure, and Postseason Likelihood in NBA Team Evaluation**
 
 ## Contents
 
@@ -25,7 +25,9 @@ Research Paper Competition.
 - [Canonical comparison output](./results/comparison-run.md)
 - [Bootstrap uncertainty output](./results/bootstrap-uncertainty.md)
 - [Sanitized team-operation scores](./results/comparison_summary_sanitized.json)
+- [Team-operation scores CSV](./results/team_operations_scores.csv)
 - [Sanitized team-season outcomes](./results/team_season_outcomes.csv)
+- [Aggregate data schema](./results/SCHEMA.md)
 - [Bootstrap script](./scripts/bootstrap_sloan_results.py)
 
 ## Reproducibility boundary
@@ -39,7 +41,9 @@ private generated inputs, or operational data.
 The full comparison implementation is maintained in the private internal
 engine repository and is not part of this public-facing submission package.
 The bundled bootstrap script is self-contained against the sanitized aggregate
-artifacts in `results/`.
+artifacts in `results/`. From the repository root, run
+`python scripts/bootstrap_sloan_results.py` to regenerate the bootstrap
+artifacts.
 
 The results are retrospective discrimination comparisons, not prospective
 championship probabilities. Regular-season wins remain the stronger quality
