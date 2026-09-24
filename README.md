@@ -21,6 +21,7 @@ Research Paper Competition.
 - [Methods](./METHODS.md)
 - [Aggregate results](./RESULTS.md)
 - [Data disclosure](./DATA-DISCLOSURE.md)
+- [Acknowledgment and commercial disclosure](./ACKNOWLEDGMENT.md)
 - [Canonical comparison output](./results/comparison-run.md)
 - [Bootstrap uncertainty output](./results/bootstrap-uncertainty.md)
 - [Comparison script](./scripts/run_sloan_true_comparison.py)

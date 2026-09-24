@@ -15,3 +15,5 @@ The strongest current structural result comes from a broader roster-construction
 **Conclusion.**
 
 These roster-construction signals provide an interpretable structural readout alongside simpler baselines such as raw FMV aggregation, FMVW without archetype conditioning, wins, net rating, and top-7 talent sum. The contribution is a calibrated roster-shape method linking player value, archetype structure, and postseason team outcomes while preserving uncertainty at archetype boundaries.
+
+The applied path for this work is DelQuant (www.delquant.com), an R & B AlgoLabs platform for translating interpretable sports-analytics research into decision-support tools.
