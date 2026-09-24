@@ -42,6 +42,7 @@ The full comparison implementation is maintained in the private internal
 engine repository and is not part of this public-facing submission package.
 The bundled bootstrap script is self-contained against the sanitized aggregate
 artifacts in `results/`. From the repository root, run
+`python -m pip install -r requirements.txt` once, then run
 `python scripts/bootstrap_sloan_results.py` to regenerate the bootstrap
 artifacts.
 

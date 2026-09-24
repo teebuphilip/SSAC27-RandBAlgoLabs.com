@@ -44,6 +44,7 @@ window is defined as seasons beginning in 2013-14 or later, yielding 390 rows.
 From the repository root:
 
 ```bash
+python -m pip install -r requirements.txt
 python scripts/bootstrap_sloan_results.py
 ```
 
