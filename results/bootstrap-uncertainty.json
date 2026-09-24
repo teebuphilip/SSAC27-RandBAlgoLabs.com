@@ -1,0 +1,205 @@
+{
+  "rows": [
+    {
+      "score": "team_total_score",
+      "outcome": "made_conf_finals",
+      "rows": 921,
+      "positive_rate": 0.13463626492942454,
+      "auc": 0.7584287853644716,
+      "ci_low": 0.7170660689943137,
+      "ci_high": 0.7979654452155254,
+      "bootstrap_iterations": 2000,
+      "window": "1995-2025"
+    },
+    {
+      "score": "team_total_score",
+      "outcome": "made_finals",
+      "rows": 921,
+      "positive_rate": 0.06731813246471227,
+      "auc": 0.7939464493597206,
+      "ci_low": 0.7423835742506025,
+      "ci_high": 0.8424681720569194,
+      "bootstrap_iterations": 2000,
+      "window": "1995-2025"
+    },
+    {
+      "score": "team_total_score",
+      "outcome": "won_championship",
+      "rows": 921,
+      "positive_rate": 0.03257328990228013,
+      "auc": 0.8147774036662926,
+      "ci_low": 0.7428055690020258,
+      "ci_high": 0.8823561247600942,
+      "bootstrap_iterations": 2000,
+      "window": "1995-2025"
+    },
+    {
+      "score": "team_rate_score",
+      "outcome": "made_conf_finals",
+      "rows": 921,
+      "positive_rate": 0.13463626492942454,
+      "auc": 0.7472376249645849,
+      "ci_low": 0.7052016798256192,
+      "ci_high": 0.7887148522146811,
+      "bootstrap_iterations": 2000,
+      "window": "1995-2025"
+    },
+    {
+      "score": "team_rate_score",
+      "outcome": "made_finals",
+      "rows": 921,
+      "positive_rate": 0.06731813246471227,
+      "auc": 0.768109955311878,
+      "ci_low": 0.7150374597385041,
+      "ci_high": 0.8204138785070827,
+      "bootstrap_iterations": 2000,
+      "window": "1995-2025"
+    },
+    {
+      "score": "team_rate_score",
+      "outcome": "won_championship",
+      "rows": 921,
+      "positive_rate": 0.03257328990228013,
+      "auc": 0.7713056490834269,
+      "ci_low": 0.6939593319715449,
+      "ci_high": 0.848209297220734,
+      "bootstrap_iterations": 2000,
+      "window": "1995-2025"
+    },
+    {
+      "score": "wins",
+      "outcome": "made_conf_finals",
+      "rows": 921,
+      "positive_rate": 0.13463626492942454,
+      "auc": 0.9066661270085401,
+      "ci_low": 0.8780380731874714,
+      "ci_high": 0.9301245644304458,
+      "bootstrap_iterations": 2000,
+      "window": "1995-2025"
+    },
+    {
+      "score": "wins",
+      "outcome": "made_finals",
+      "rows": 921,
+      "positive_rate": 0.06731813246471227,
+      "auc": 0.8889744263772579,
+      "ci_low": 0.8496846044071666,
+      "ci_high": 0.9196357412994498,
+      "bootstrap_iterations": 2000,
+      "window": "1995-2025"
+    },
+    {
+      "score": "wins",
+      "outcome": "won_championship",
+      "rows": 921,
+      "positive_rate": 0.03257328990228013,
+      "auc": 0.9138795361017583,
+      "ci_low": 0.8623082201852851,
+      "ci_high": 0.9523691156772754,
+      "bootstrap_iterations": 2000,
+      "window": "1995-2025"
+    },
+    {
+      "score": "team_total_score",
+      "outcome": "made_conf_finals",
+      "rows": 390,
+      "positive_rate": 0.13333333333333333,
+      "auc": 0.7977924442421483,
+      "ci_low": 0.7430577718736299,
+      "ci_high": 0.8474995487001946,
+      "bootstrap_iterations": 2000,
+      "window": "2013-2025"
+    },
+    {
+      "score": "team_total_score",
+      "outcome": "made_finals",
+      "rows": 390,
+      "positive_rate": 0.06666666666666667,
+      "auc": 0.8296703296703297,
+      "ci_low": 0.760353066180935,
+      "ci_high": 0.891849554184565,
+      "bootstrap_iterations": 2000,
+      "window": "2013-2025"
+    },
+    {
+      "score": "team_total_score",
+      "outcome": "won_championship",
+      "rows": 390,
+      "positive_rate": 0.03076923076923077,
+      "auc": 0.8348765432098766,
+      "ci_low": 0.7104054878257712,
+      "ci_high": 0.9342191375034444,
+      "bootstrap_iterations": 2000,
+      "window": "2013-2025"
+    },
+    {
+      "score": "team_rate_score",
+      "outcome": "made_conf_finals",
+      "rows": 390,
+      "positive_rate": 0.13333333333333333,
+      "auc": 0.7700842057350933,
+      "ci_low": 0.7074551030383964,
+      "ci_high": 0.8272493376142674,
+      "bootstrap_iterations": 2000,
+      "window": "2013-2025"
+    },
+    {
+      "score": "team_rate_score",
+      "outcome": "made_finals",
+      "rows": 390,
+      "positive_rate": 0.06666666666666667,
+      "auc": 0.8064243448858833,
+      "ci_low": 0.7322989076464748,
+      "ci_high": 0.8763838971418552,
+      "bootstrap_iterations": 2000,
+      "window": "2013-2025"
+    },
+    {
+      "score": "team_rate_score",
+      "outcome": "won_championship",
+      "rows": 390,
+      "positive_rate": 0.03076923076923077,
+      "auc": 0.7954144620811288,
+      "ci_low": 0.6707867231714257,
+      "ci_high": 0.9054545454545454,
+      "bootstrap_iterations": 2000,
+      "window": "2013-2025"
+    },
+    {
+      "score": "wins",
+      "outcome": "made_conf_finals",
+      "rows": 390,
+      "positive_rate": 0.13333333333333333,
+      "auc": 0.9032203004096495,
+      "ci_low": 0.8629545773804772,
+      "ci_high": 0.9357447355241059,
+      "bootstrap_iterations": 2000,
+      "window": "2013-2025"
+    },
+    {
+      "score": "wins",
+      "outcome": "made_finals",
+      "rows": 390,
+      "positive_rate": 0.06666666666666667,
+      "auc": 0.8878909551986475,
+      "ci_low": 0.8326552985227954,
+      "ci_high": 0.9328121934051654,
+      "bootstrap_iterations": 2000,
+      "window": "2013-2025"
+    },
+    {
+      "score": "wins",
+      "outcome": "won_championship",
+      "rows": 390,
+      "positive_rate": 0.03076923076923077,
+      "auc": 0.9261463844797179,
+      "ci_low": 0.853420604849821,
+      "ci_high": 0.9766261179453791,
+      "bootstrap_iterations": 2000,
+      "window": "2013-2025"
+    }
+  ],
+  "source_rows": 921,
+  "iterations_requested": 2000,
+  "seed": 20270914
+}

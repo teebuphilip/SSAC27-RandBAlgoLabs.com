@@ -11,8 +11,9 @@ import numpy as np
 import pandas as pd
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-TEAM_OPS_PATH = PROJECT_ROOT / "reports" / "basketball_ops" / "comparisons" / "comparison_summary.json"
-OUTCOME_PATH = PROJECT_ROOT / "reports" / "backtests" / "team_archetype_study" / "team_season_archetype_mixes.csv"
+RESULTS_DIR = PROJECT_ROOT / "results"
+TEAM_OPS_PATH = RESULTS_DIR / "comparison_summary_sanitized.json"
+OUTCOME_PATH = RESULTS_DIR / "team_season_outcomes.csv"
 
 
 def _auc(y: np.ndarray, score: np.ndarray) -> float:
@@ -99,8 +100,8 @@ def build_report(*, output_md: Path, output_json: Path, iterations: int = 2000, 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--iterations", type=int, default=2000)
-    parser.add_argument("--output-md", default=str(PROJECT_ROOT / "sloan2027" / "bootstrap-uncertainty.md"))
-    parser.add_argument("--output-json", default=str(PROJECT_ROOT / "sloan2027" / "bootstrap-uncertainty.json"))
+    parser.add_argument("--output-md", default=str(RESULTS_DIR / "bootstrap-uncertainty.md"))
+    parser.add_argument("--output-json", default=str(RESULTS_DIR / "bootstrap-uncertainty.json"))
     args = parser.parse_args()
     build_report(
         output_md=Path(args.output_md),

@@ -1,6 +1,6 @@
 # Methods Summary
 
-DBB2 produces context-neutral player value, cap-adjusted fair market value
+DelQuant produces context-neutral player value, cap-adjusted fair market value
 (FMV), and FMVW. The Sloan evaluation aggregates those player-level layers into
 team roster-construction features representing core, support, fit, interaction,
 pressure/easy-bucket creation, and depth.
@@ -15,7 +15,7 @@ Archetype membership is confidence-weighted at cluster boundaries. The
 archetype layer is used as an explanatory substrate for roster shape; it is not
 presented as a universal championship taxonomy or prospective forecast.
 
-The canonical implementation is linked from the parent Sloan working set:
-
-- `scripts/run_sloan_true_comparison.py`
-- `scripts/bootstrap_sloan_results.py`
+The bundled bootstrap script is self-contained against the sanitized aggregate
+artifacts in `results/`. The full comparison implementation remains in the
+private internal engine repository and is not required to rerun the headline
+bootstrap.

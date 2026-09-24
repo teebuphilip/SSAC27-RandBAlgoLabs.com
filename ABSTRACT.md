@@ -1,19 +1,17 @@
-# Stochastic Roster Shape, Archetype Mix, and Championship Likeness in NBA Team Evaluation
+# Roster Shape, Archetype Structure, and Postseason Likelihood in NBA Team Evaluation
 
 **Introduction.**
 
-We test whether elite basketball evaluation can be translated into a reproducible roster-construction framework. DBB2 converts context-neutral player value into cap-adjusted FMV and then into FMVW, then layers in offensive and defensive archetype structure to represent how value is distributed across a roster. The goal is not to replace player value, but to test whether the way value is arranged on a team carries additional postseason signal.
+We test whether the structural arrangement of value across a roster carries postseason signal beyond player-value totals. DelQuant converts context-neutral player value into cap-adjusted fair market value (FMV) and wins-equivalent FMVW, then decomposes team rosters to represent how value is concentrated, paired, and supported. The goal is not to replace team-quality measures, but to test whether roster shape carries additional conference-finals discrimination.
 
 **Methods.**
 
-Using NBA seasons from 1995-96 through 2025-26, we build era-aware championship reference sets and compare historical team shapes against conference-finals, Finals, and title outcomes. The defensive layer adds a separate reproducible axis, and the modern offense-plus-defense crosswalk preserves uncertainty at archetype boundaries through confidence-weighted membership.
+Using NBA team-seasons from 1995-96 through 2025-26 (921 team-seasons), we construct a team-operations score from DelQuant player-value projections aggregated across each roster. The score decomposes roster value into six components: core-value concentration, supporting-cast value, archetype fit, interaction effects, pressure and easy-bucket creation, and depth. Current-season wins are not a score input; historical pair-fit terms are documented as part of the interaction component. Archetype assignments use separate offensive and defensive archives, with nearest-cluster probabilities used for the archetype-only comparisons; the team-operations score is evaluated as a retrospective discriminator over the full archive. A deterministic row bootstrap with 2,000 iterations and fixed seed provides uncertainty intervals.
 
 **Results.**
 
-The strongest current structural result comes from a broader roster-construction score that splits team value into core, support, fit, interaction, pressure/easy-bucket, and depth terms. That score reaches 75.8% conference-finals AUC overall and 79.8% in the modern window, with bootstrap intervals of 71.7%-79.8% and 74.3%-84.7%, respectively. Regular-season wins remain a stronger quality baseline, so we interpret this result as structural and explanatory rather than as a claim to replace wins.
+The team-operations score reaches 75.8% conference-finals AUC over the full archive (95% CI: 71.7%-79.8%, n=921) and 79.8% in the modern window from 2013-14 onward (95% CI: 74.3%-84.7%, n=390). Regular-season wins remain the stronger quality baseline at 90.7% overall and 90.3% in the modern window. We present these results as retrospective discrimination evidence, not prospective championship probabilities, and interpret the structural score as complementary to rather than competitive with wins.
 
 **Conclusion.**
 
-These roster-construction signals provide an interpretable structural readout alongside simpler baselines such as raw FMV aggregation, FMVW without archetype conditioning, wins, net rating, and top-7 talent sum. The contribution is a calibrated roster-shape method linking player value, archetype structure, and postseason team outcomes while preserving uncertainty at archetype boundaries.
-
-The applied path for this work is DelQuant (www.delquant.com), an R & B AlgoLabs platform for translating interpretable sports-analytics research into decision-support tools.
+A decomposed roster-construction score provides an interpretable structural readout alongside established baselines including raw FMV aggregation, FMVW without archetype conditioning, wins, net rating, and top-7 talent sum. The main contribution is a calibrated method linking player-value distribution, archetype structure, and postseason team outcomes. The methods are implemented in the DelQuant (www.delquant.com) sports-analytics platform from R & B AlgoLabs, which provides the applied decision-support context for this work.
