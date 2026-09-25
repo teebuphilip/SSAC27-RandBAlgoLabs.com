@@ -1,12 +1,12 @@
-# Roster Shape, Archetype Structure, and Postseason Likelihood in NBA Team Evaluation
+# Roster Shape, Archetype Structure, and Postseason Signal in NBA Team Evaluation
 
 **Introduction.**
 
-We test whether the structural arrangement of value across a roster carries postseason signal beyond player-value totals. DelQuant converts context-neutral player value into cap-adjusted fair market value (FMV) and wins-equivalent FMVW, then decomposes team rosters to represent how value is concentrated, paired, and supported. The goal is not to replace team-quality measures, but to test whether roster shape carries additional conference-finals discrimination.
+We test whether the structural arrangement of value across a roster carries postseason signal beyond player-value totals. We convert context-neutral player value into cap-adjusted fair market value (FMV) and wins-equivalent FMVW, then decompose team rosters to represent how value is concentrated, paired, and supported. The goal is not to replace team-quality measures, but to test whether roster shape carries additional conference-finals discrimination.
 
 **Methods.**
 
-Using NBA team-seasons from 1995-96 through 2025-26 (921 team-seasons), we construct a team-operations score from DelQuant player-value projections aggregated across each roster. The score decomposes roster value into six components: core-value concentration, supporting-cast value, archetype fit, interaction effects, pressure and easy-bucket creation, and depth. Current-season wins are not a score input; historical pair-fit terms are documented as part of the interaction component. Archetype assignments use separate offensive and defensive archives, with nearest-cluster probabilities used for the archetype-only comparisons; the team-operations score is evaluated as a retrospective discriminator over the full archive. A deterministic row bootstrap with 2,000 iterations and fixed seed provides uncertainty intervals.
+Using NBA team-seasons from 1995-96 through 2025-26 (921 team-seasons), we construct a team-operations score from DelQuant (www.delquant.com) player-value projections aggregated across each roster. The score decomposes roster value into six components: core-value concentration, supporting-cast value, archetype fit, interaction effects, pressure and easy-bucket creation, and depth. Current-season wins are not a score input. Archetype assignments use separate offensive and defensive archives, with nearest-cluster probabilities used for the archetype-only comparisons; the team-operations score is evaluated as a retrospective discriminator over the full archive without era hold-out. A deterministic row bootstrap with 2,000 iterations and fixed seed provides uncertainty intervals.
 
 **Results.**
 

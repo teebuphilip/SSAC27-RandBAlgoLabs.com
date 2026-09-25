@@ -13,7 +13,7 @@ Research Paper Competition.
 
 ## Paper
 
-**Roster Shape, Archetype Structure, and Postseason Likelihood in NBA Team Evaluation**
+**Roster Shape, Archetype Structure, and Postseason Signal in NBA Team Evaluation**
 
 ## Contents
 

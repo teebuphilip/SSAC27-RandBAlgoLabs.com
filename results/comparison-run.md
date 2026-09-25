@@ -2,7 +2,7 @@
 
 ## What This Run Means
 
-This is the first logistic comparison run for the Sloan paper. It scores team seasons from the existing archive, holds eras out, and compares offense-only, defense-only, and combined two-way shape signals against simple baselines.
+This document records the full comparison run supporting the SSAC27 submission. It scores team seasons from the existing archive and compares offense-only, defense-only, and combined two-way shape signals against simple baselines.
 The soft-assignment layer now uses nearest-cluster probability distributions over the archetype centroids, so the comparison preserves uncertainty instead of forcing brittle hard labels.
 
 Important caveat: the defensive archetype layer only exists from 2013-14 onward. That means the fair head-to-head comparison for all three layers is the modern overlap window, while the offense-only layer can also be shown across the full historical archive.
@@ -320,6 +320,7 @@ Best offense temperature: 0.65
 ## Team Ops Score
 
 
+The team-operations score is evaluated as a retrospective discriminator over the full archive without era hold-out; the archetype-only models above use era-held-out evaluation.
 
 | Model | Window | Rows | Eras | CF AUC | Finals AUC | Title AUC | Coverage |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: |
@@ -328,11 +329,3 @@ Best offense temperature: 0.65
 | Team rate score | 1995-96 to 2025-26 | 921 | 31 | 74.7% | 76.8% | 77.1% | NA |
 | Pressure score | 1995-96 to 2025-26 | 921 | 31 | 61.3% | 63.3% | 71.7% | NA |
 | Easy score | 1995-96 to 2025-26 | 921 | 31 | 73.7% | 74.8% | 74.3% | NA |
-
-## Short Readout
-
-The paper survives if the shape score can separate conference-finals teams better than the simpler baselines, or at least stay competitive while giving a more interpretable roster-shape story.
-The hard-label vs nearest-probability ablation is part of that check, not a separate claim.
-For the current rerun, the main question is whether the shape layer can better separate conference-finals teams from everyone else.
-
-The next revision step is to turn the strongest row in this table into the abstract's actual result sentence.
