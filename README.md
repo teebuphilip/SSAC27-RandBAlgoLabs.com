@@ -46,6 +46,8 @@ artifacts in `results/`. From the repository root, run
 `python scripts/bootstrap_sloan_results.py` to regenerate the bootstrap
 artifacts.
 
+Requires Python 3.10 or later.
+
 The results are retrospective discrimination comparisons, not prospective
 championship probabilities. Regular-season wins remain the stronger quality
 baseline; the team-operations score is presented as an interpretable structural

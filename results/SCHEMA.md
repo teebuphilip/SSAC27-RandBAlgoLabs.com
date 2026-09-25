@@ -14,7 +14,7 @@ One row per NBA team-season; 921 rows covering 1995-96 through 2025-26.
 | `team` | Public NBA team abbreviation |
 | `wins` | Regular-season wins; comparator/output field, not the target |
 | `team_rate_score` | Aggregate roster quality/rate score |
-| `team_minutes_coverage` | Aggregate coverage term for roster minutes |
+| `team_minutes_coverage` | Aggregate coverage term for roster minutes; captures the share of projected roster minutes represented by the player projections included in the score |
 | `team_total_score` | Canonical team-operations structural score |
 | `interaction_bonus` | Aggregate roster interaction/fit term |
 | `pressure_score` | Aggregate pressure/easy-bucket pressure component |
